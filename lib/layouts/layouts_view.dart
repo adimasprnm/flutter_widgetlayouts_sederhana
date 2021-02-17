@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:widget_layouts/menu/main_view.dart';
 
 class LayoutsPage extends StatefulWidget {
   @override
