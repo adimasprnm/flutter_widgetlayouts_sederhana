@@ -3,6 +3,7 @@ import 'package:widget_layouts/button/button_view.dart';
 import 'package:widget_layouts/layouts/layouts_view.dart';
 import 'package:widget_layouts/listview/listview.dart';
 import 'package:widget_layouts/grid/grid_view.dart';
+import 'package:widget_layouts/scrollview/scroll_view.dart';
 import 'package:widget_layouts/tabbar/tabbar_view.dart';
 import 'package:widget_layouts/text_textfield/text_view.dart';
 import 'package:widget_layouts/table/table_view.dart';
@@ -118,6 +119,18 @@ class _MainPageState extends State<MainPage> {
                     //   context,
                     //   MaterialPageRoute(builder: (context) => TabViewPage()),
                     // );
+                  },
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  title: Text('Scroll View Page'),
+                  leading: Icon(Icons.swap_vertical_circle_outlined),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ScrollViewPage()),
+                    );
                   },
                 ),
               ),
