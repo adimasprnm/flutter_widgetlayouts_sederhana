@@ -62,21 +62,18 @@ class _LayoutsPageState extends State<LayoutsPage> {
       ],
     );
 
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Material Apps',
-      home: Scaffold(
+    return SafeArea(
+      child: new Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.white,
-          leading: Icon(Icons.arrow_back_ios, color: Colors.black),
+          backgroundColor: Colors.black,
           title: Text(
             'Learn Layouting',
-            style: TextStyle(color: Colors.black),
+            style: TextStyle(color: Colors.white),
           ),
           actions: <Widget>[
             Icon(
               Icons.search,
-              color: Colors.black,
+              color: Colors.white,
             )
           ],
         ),
